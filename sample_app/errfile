@@ -1,0 +1,106 @@
+Run options: --seed 9553
+
+# Running:
+
+E
+
+Error:
+SiteLayoutTest#test_layout_links:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:44.916483', '2019-07-04 12:14:44.916483', 298486374)
+    
+
+Error:
+SiteLayoutTest#test_layout_links:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/integration/site_layout_test.rb:5
+
+E
+
+Error:
+UsersSignupTest#test_invalid_signup_information:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.000895', '2019-07-04 12:14:45.000895', 298486374)
+    
+
+Error:
+UsersSignupTest#test_invalid_signup_information:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/integration/users_signup_test.rb:7
+
+E
+
+Error:
+UsersControllerTest#test_should_get_new:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.064671', '2019-07-04 12:14:45.064671', 298486374)
+    
+
+Error:
+UsersControllerTest#test_should_get_new:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/controllers/users_controller_test.rb:4
+
+E
+
+Error:
+StaticPagesControllerTest#test_should_get_home:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.108520', '2019-07-04 12:14:45.108520', 298486374)
+    
+
+Error:
+StaticPagesControllerTest#test_should_get_home:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/controllers/static_pages_controller_test.rb:5
+
+E
+
+Error:
+StaticPagesControllerTest#test_should_get_about:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.157353', '2019-07-04 12:14:45.157353', 298486374)
+    
+
+Error:
+StaticPagesControllerTest#test_should_get_about:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/controllers/static_pages_controller_test.rb:17
+
+E
+
+Error:
+StaticPagesControllerTest#test_should_get_contact:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.196262', '2019-07-04 12:14:45.196262', 298486374)
+    
+
+Error:
+StaticPagesControllerTest#test_should_get_contact:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/controllers/static_pages_controller_test.rb:23
+
+E
+
+Error:
+StaticPagesControllerTest#test_should_get_help:
+ActiveRecord::RecordNotUnique: SQLite3::ConstraintException: UNIQUE constraint failed: users.email: INSERT INTO "users" ("name", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2019-07-04 12:14:45.234579', '2019-07-04 12:14:45.234579', 298486374)
+    
+
+Error:
+StaticPagesControllerTest#test_should_get_help:
+NoMethodError: undefined method `each' for nil:NilClass
+    
+
+bin/rails test test/controllers/static_pages_controller_test.rb:11
+
+
+
+Finished in 0.464423s, 15.0725 runs/s, 0.0000 assertions/s.
+7 runs, 0 assertions, 0 failures, 7 errors, 0 skips
