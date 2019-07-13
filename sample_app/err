@@ -1,0 +1,19 @@
+Dropped database 'db/development.sqlite3'
+Dropped database 'db/test.sqlite3'
+Created database 'db/development.sqlite3'
+Created database 'db/test.sqlite3'
+== 20190617162654 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0145s
+== 20190617162654 CreateUsers: migrated (0.0147s) =============================
+
+== 20190705135651 AddPasswordDigestToUsers: migrating =========================
+-- add_column(:users, :password_digest, :string)
+   -> 0.0148s
+== 20190705135651 AddPasswordDigestToUsers: migrated (0.0149s) ================
+
+== 20190710032745 AddRememberDigestToUsers: migrating =========================
+-- add_column(:users, :remember_digest, :string)
+   -> 0.0097s
+== 20190710032745 AddRememberDigestToUsers: migrated (0.0098s) ================
+
